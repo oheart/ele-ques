@@ -1,0 +1,63 @@
+/* common css */
+button{
+  border:none;
+  outline: none;
+}
+input{
+  outline: none;
+}
+/* app css */
+.click-show-layer-box{
+  text-align: center;
+  margin-top: 20px;
+}
+/* layer css */
+.layer-mask{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 990;
+}
+.layer-component{
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   padding: 18px 20px;
+   border-radius: 3px;
+   transform: translate(-50%, -50%);
+   width: 300px;
+   /* width: auto; */
+   border: 1px solid #cacacb;
+   background: #FFF;
+   z-index: 1000;
+}
+.layer-input-box{
+  margin: 0 0 10px 0;
+}
+.layer-input{
+  width:100%;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 4px;
+  box-sizing: border-box;
+}
+.layer-btn-box{
+  text-align: center;
+}
+.layer-btn{
+  border-radius: 10px;
+  border: 1px solid #C6C7C6;
+  padding:2px 6px;
+}
+.cancel-layer-btn{
+  margin-right: 10px;
+}
+.submit-layer-btn{
+  background: #EFF6FF;
+  border: 1px solid #8ab9f3;
+  color: #8ab9f3;
+}
