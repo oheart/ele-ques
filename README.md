@@ -25,13 +25,13 @@
     merge是单纯的合并，rebase有冲突会提示解决。如果想让分支历史看起来像没有合并一样可以用rebase.
 
     操作步骤：  
-    1. git checkout -b dev   #新建并切换到开发分支dev
-    2. git add .     # 添加
-    3. git commit  -m "提交说明"   #commit
-    4. git fetch origin  #与主干同步
-    5. git checkout master # 切换到主分支
-    5. git rebase dev
-    6. git push
+    - git checkout -b dev   #新建并切换到开发分支dev
+    - git add .     # 添加
+    - git commit  -m "提交说明"   #commit
+    - git fetch origin  #与主干同步
+    - git checkout master # 切换到主分支
+    - git rebase dev
+    - git push
 
 6. 你日常使用什么前端构建工具？请列出基本配置：
    webpack;   
