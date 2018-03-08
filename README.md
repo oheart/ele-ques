@@ -6,7 +6,7 @@
 
     布局方式： flex、Grid、float
        
-    答案：[见ques2文件夹](./ques2)
+    答案：见ques2文件夹
 
 3. **请使用React/vue实现一个如下图所示的通用弹窗组件**
 
