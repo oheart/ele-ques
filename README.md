@@ -23,19 +23,19 @@
 
 4. **假设在 a.com域下有一段js代码需要异步请求b.com域下的数据，会出现什么问题，如何解决？**
 
-会出现跨域问题。 
+    会出现跨域问题。 
 
-如何解决：
--  jsonp 
-前端传递callback参数（?callback=appendHtml），后台把返回数据用callback包裹( appendHtml(["数据1","数据2","数据3"]) )，前端用callback获取数据。  
-本质上创建了一个script标签，script可以加载任何东西（js,txt,xhr...）,相当于把请求的东西放在本地然后当做js执行。
-- CORS
-利用同源策略，后台处理返回响应头（Response Headers）：Access-Control-Allow-Origin: */指定域名
-- axios
-- nginx等中间层转发
-- webpackDevServer的proxy
+    如何解决：
+    -  jsonp 
+    前端传递callback参数（?callback=appendHtml），后台把返回数据用callback包裹( appendHtml(["数据1","数据2","数据3"]) )，前端用callback获取数据。  
+    本质上创建了一个script标签，script可以加载任何东西（js,txt,xhr...）,相当于把请求的东西放在本地然后当做js执行。
+    - CORS
+    利用同源策略，后台处理返回响应头（Response Headers）：Access-Control-Allow-Origin: */指定域名
+    - axios
+    - nginx等中间层转发
+    - webpackDevServer的proxy
 
-答案：见ques4文件夹
+    详细答案：见ques4文件夹
 
 5. **什么情况下会进行git rebase, 如何操作？**
 
